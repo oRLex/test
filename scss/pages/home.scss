@@ -1,0 +1,136 @@
+// global styles
+@import "../global";
+
+// home page style
+.top-navbar {
+  background-color: #000000;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  @media (max-width: $screen-sm){
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+    .hamburger {
+      margin-top: 0.7rem;
+      color: #fff;
+      font-size: 3.5rem;
+      display: none;
+      cursor: pointer;
+        @media (max-width: $screen-sm){
+          display: block;
+          position: relative;
+          top: -1.3rem;
+        }
+    }
+  .hero-nav{
+    display: inline-block;
+    ul{
+      display: inline-block;
+      .nav-item{
+        margin-top: 0.5rem;
+        display: inline-block;
+        a{
+          font-family: $fontBase;
+          font-size: 1.6rem;
+          text-decoration: none;
+          color: #c1c1c1;
+          margin-right: 2rem;
+          transition: 0.3s;
+            &:hover{
+              color: white;
+            }
+        }
+      }
+    }
+    @media (max-width: $screen-sm){
+          ul {
+            display: none;
+            .nav-item {
+              display: block;
+              margin-top: -0.5rem;
+              a {
+                font-size: 1.8rem;
+                line-height: 5rem;
+                padding-right: 0rem;
+              }
+            }
+          }
+    }
+
+  }
+}
+
+//bg-image
+
+.bg-hero{
+  background: url("../../img/bg/bg.jpg") no-repeat center center fixed;
+  background-color: $third;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width:100%;
+
+  .white-line{
+    margin: 4rem 0;
+    width: 7.4rem;
+    height:0.2rem;
+    background-color: $white;
+    @media (max-width: $screen-sm){
+      margin: 2rem 0;
+    }
+  }
+
+  .form-box{
+    border-radius: 0.5rem;
+    width: 36rem;
+    height:39rem;
+    background-color: $white;
+      .box-grey{
+        padding: 1rem 0;
+        background-color: #f5f5f5;
+        h3{
+          font-weight:bold;
+          color: #000;
+        }
+      }
+    .grid-form{
+      padding: 3rem 3.8rem;
+      .input{
+        width:100%;
+        height:3.4rem;
+        margin-bottom: 3rem;
+        outline: 0;
+        border-width: 0 0 2px 0;
+        border-color: #d6d6d6;
+      }
+      input::-webkit-input-placeholder {
+        padding-left:1rem;
+      }
+    }
+    @media (max-width: $screen-sm){
+      margin-top: 4rem;
+      width: 100%;
+    }
+  }
+}
+
+.icons{
+  padding-top: 3.5rem;
+  .fa{
+    font-size:5rem;
+    color: #cccccc;
+    padding-left: 4rem;
+    &:first-child{
+      padding-left: 0;
+    }
+    @media (max-width: $screen-sm){
+      font-size:2.8rem;
+    }
+  }
+  @media (max-width: $screen-sm){
+    padding-top:1.5rem;
+  }
+}
+
+
+

@@ -1,0 +1,47 @@
+%btn {
+  font-size: 1.4rem;
+  color: white;
+  background: transparent;
+  padding: 1.2rem 3rem;
+  border: 2px solid white;
+  width: auto;
+  margin: 0 auto;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+
+  @media (max-width: $screen-xs){
+    width: 100%;
+  }
+
+}
+
+.btn-prime {
+  @extend %btn;
+  margin-top: 3rem;
+  border: 2px solid white;
+
+  &:hover {
+    background: #f5f5f5;
+  }
+  @media (max-width: $screen-sm){
+    margin-top: 2rem;
+    width:100%;
+  }
+}
+
+.btn-second {
+  @extend %btn;
+  padding: 2.3rem 0;
+  background: $second;
+  width:100%;
+  border: 0;
+  -moz-border-radius-bottomleft: 2rem;
+  -moz-border-radius-bottomright: 2rem;
+  &:hover {
+    background: $secondShade;
+  }
+}
+
+
